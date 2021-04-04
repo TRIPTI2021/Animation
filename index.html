@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: lime;
+            font-size: 35px;
+        }
+            #div1{
+                width: 450px; 
+                height: 450px;
+                background-image: url("reading.gif");
+                background-size: cover;
+                animation-name: example;
+                position: relative;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-delay: 2s;
+                animation-direction: alternate;
+            }
+            @keyframes example{
+                0% {background-image: url("reading.gif"); left: 0px; top: 0px;}
+                25% {background-image: url("dance.gif"); left: 200px; top: 0px;}
+                50% {background-image: url("sing.gif"); left: 200px; top: 200px;}
+                75% {background-image: url("coding.gif"); left: 0px; top: 200px;}
+                100% {background-image: url("reading.gif"); left: 0px; top: 0px;}
+            }
+            #div3{
+                width: 400px; 
+                height: 400px;
+                background-color: red;
+                animation-name: colour;
+                position: relative;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-delay: 0s;
+                animation-direction: alternate;
+            }
+            @keyframes colour{
+                0% {background-color: red; left: 0px; top: 0px;}
+                25% {background-color: yellow; left: 200px; top: 0px;}
+                50% {background-color: blue; left: 200px; top: 200px;}
+                75% {background-color: limegreen; left: 0px; top: 200px;}
+                100% {background-color: red; left: 0px; top: 0px;}
+            }
+            #div2{
+                height: 500px;
+                width: 500px;
+                background-image: url("c.jpg");
+                background-size: cover;
+                animation-name: B;
+                position: relative;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-delay: 4s;
+                animation-direction: alternate;
+            }
+            @keyframes B{
+                0% {background-image: url("c.jpg"); left: 0px; top: 0px;}
+                25%{background-image: url("g.jpg"); left: 200px; top: 0px;}
+                50%{background-image: url("l.jpg"); left: 200px; top: 200px;}
+                75%{background-image: url("a.jpg"); left: 0px; top: 200px;}
+                100%{background-image: url("R.jpg"); left: 0px; top: 0px;}
+            }
+            #div5{
+                width: 500px; 
+                height: 400px;
+               background-image: url("thank you.gif");
+               background-size: cover;
+                animation-name: Thanks;
+                position: relative;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-delay: 0s;
+                animation-direction: alternate;
+            }
+            @keyframes Thanks{
+                0% {background-image: url("thank you.gif"); left: 0px; top: 0px;}
+                25% {background-image: url("thanks.gif"); left: 200px; top: 0px;}
+                50% {background-image: url("thank.gif"); left: 200px; top: 200px;}
+                75% {background-image: url("you.gif"); left: 0px; top: 200px;}
+                100% {background-image: url("thank  you.gif"); left: 0px; top: 0px;}
+            }
+    </style>
+</head>
+<body>
+    <audio src="song.mp3" controls autoplay></audio>
+    <marquee><h1>Colours!!..<img src="color.gif" height="175" width="175"></h1></marquee>
+    <center><div id="div3"></div></center><br/><br/><br/><br/><br/><br/><br/><br/>
+    <marquee><h1>Things I Like to do!!..<img src="like.gif" height="175" width="175"></h1></marquee>
+    <center><div id="div1"></div></center><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <marquee><h1>Inspirational  Lines!!..<img src="m.gif" height="175" width="175"></h1></marquee>
+    <center><div id="div2"></div></center><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <marquee><h1>Story  Time!!..<img src="story.gif" height="175" width="175"></h1></marquee>
+    <center><div id="div4"><marquee><video src="story.mp4" controls height="500px " autoplay></video></marquee></div></center><br/><br/><br/><br/><br/>
+    <center><div id="div5"></div></center>
+</body>
+</html>
